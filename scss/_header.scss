@@ -1,0 +1,39 @@
+.logo{
+    width: 150px;
+    margin-top: $espacioMd;
+}
+
+.logo2{
+    justify-content: center;
+}
+
+header{
+    background-color: $cuarto;
+    border-bottom: dashed $primario $espacioXxs;   
+    nav{
+        ul{
+            overflow: hidden;
+            padding: $espacioXxs;
+            li{
+                font-size: $sizeXs;
+                border: outset $espacioXxs;
+                border-color: $primario;
+                list-style: none;
+            }   
+        }
+    }      
+}
+
+#header a{
+    color: $terceario;
+}
+
+.li-nav_scale:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: 0,5s;
+}
+
+.header-degrade{
+    background: linear-gradient(to bottom, $primario, $text-color);
+}

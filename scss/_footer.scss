@@ -1,0 +1,23 @@
+footer{
+    background-color: $secundario;
+    a{
+        overflow: hidden;
+        img{
+            width: 10vw;
+            padding: $espacioLg $espacioMd;
+        }
+    }   
+}  
+.redes{
+    justify-content: space-evenly;
+}
+
+.footer-degrade{
+    background: linear-gradient(to top, $primario,$text-color);
+}
+
+.footer-redes_scale:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: 0,5s;
+}

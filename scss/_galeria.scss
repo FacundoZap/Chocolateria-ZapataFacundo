@@ -1,0 +1,45 @@
+.galeria{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.galeriaFoto{
+    width: 70vw;
+}
+
+.galeriaH3{
+    font-size: $sizeLg;
+    text-align: center;
+}
+@media (min-width: 768px){
+    .galeria{
+        flex-direction: column;
+        justify-content: start;
+    }
+    .galeriaFoto{
+        width: 28vw;
+    }
+    .galeriaGrid{
+        display: grid;
+        grid-template-columns: 33vw 33vw 33vw;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "madre pascuas amigo";
+    }
+    #galeria1{
+        grid-area: madre;
+    }
+    #galeria2{
+        grid-area: pascuas;
+    }
+    #galeria3{
+        grid-area: amigo;
+    }
+}
+@media (min-width: 992px){
+    .carrusel{
+        width: 80vw;
+    }
+}
+@media (min-width: 1200px){}

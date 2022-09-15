@@ -1,0 +1,28 @@
+.nosotrosMain{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nosotrosFoto{
+    width: 80vw;
+}
+
+.nosotrosParrafo{
+    width: 80vw;
+    margin: $espacioMd 5px;
+}
+@media (min-width: 768px){
+    .nosotrosMain{
+    flex-direction: row;
+    }
+
+    .nosotrosMainReverse{
+    flex-direction: row-reverse;
+    }
+
+    .nosotrosParrafo{
+    margin: 0 $espacioLg;    
+    }
+}
+@media (min-width: 1200px){}

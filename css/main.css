@@ -1,0 +1,307 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Roboto:ital,wght@1,300&display=swap");
+* {
+  overflow-x: hidden;
+  font-family: "Merriweather", serif;
+  font-size: 62, 5%;
+}
+
+.contenedor {
+  display: flex;
+}
+
+main {
+  color: rgb(63, 26, 26);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "header" "main" "pie";
+}
+
+#header {
+  grid-area: header;
+}
+
+#main {
+  grid-area: main;
+}
+
+#footer {
+  grid-area: pie;
+}
+
+.logo {
+  width: 150px;
+  margin-top: 20px;
+}
+
+.logo2 {
+  justify-content: center;
+}
+
+header {
+  background-color: rgb(191, 171, 170);
+  border-bottom: dashed rgb(114, 44, 57) 2px;
+}
+header nav ul {
+  overflow: hidden;
+  padding: 2px;
+}
+header nav ul li {
+  font-size: 1rem;
+  border: outset 2px;
+  border-color: rgb(114, 44, 57);
+  list-style: none;
+}
+
+#header a {
+  color: rgb(242, 162, 176);
+}
+
+.li-nav_scale:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  transition: 0, 5s;
+}
+
+.header-degrade {
+  background: linear-gradient(to bottom, rgb(114, 44, 57), rgb(63, 26, 26));
+}
+
+footer {
+  background-color: rgb(165, 81, 96);
+}
+footer a {
+  overflow: hidden;
+}
+footer a img {
+  width: 10vw;
+  padding: 30px 20px;
+}
+
+.redes {
+  justify-content: space-evenly;
+}
+
+.footer-degrade {
+  background: linear-gradient(to top, rgb(114, 44, 57), rgb(63, 26, 26));
+}
+
+.footer-redes_scale:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  transition: 0, 5s;
+}
+
+main {
+  background-color: rgb(242, 162, 176);
+  border-bottom: dashed rgb(114, 44, 57) 2px;
+}
+main section img {
+  width: 70vw;
+  margin: 30px 20px;
+}
+main section p {
+  width: 70vw;
+  text-align: center;
+  margin: 20px;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  color: rgb(63, 26, 26);
+  padding: 50px 0;
+}
+
+.principal {
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* Media a 768 */
+@media (min-width: 768px) {
+  /* Index */
+  .principal {
+    flex-direction: row;
+  }
+  .indexImagen {
+    width: 45vw;
+  }
+  .indexParrafo {
+    width: 45vw;
+    margin: 30px;
+  }
+}
+/* Media a 1200 */
+@media (min-width: 1200px) {
+  /* Index */
+  .logo2 {
+    justify-content: left;
+    padding-left: 20px;
+  }
+  .links {
+    justify-content: end;
+  }
+  .redes {
+    justify-content: start;
+  }
+  .face {
+    width: 8vw;
+    margin: 5px 0;
+  }
+}
+.nosotrosMain {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nosotrosFoto {
+  width: 80vw;
+}
+
+.nosotrosParrafo {
+  width: 80vw;
+  margin: 20px 5px;
+}
+
+@media (min-width: 768px) {
+  .nosotrosMain {
+    flex-direction: row;
+  }
+  .nosotrosMainReverse {
+    flex-direction: row-reverse;
+  }
+  .nosotrosParrafo {
+    margin: 0 30px;
+  }
+}
+.productos {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#foto .fotoProducto {
+  border-radius: 100px 0px 100px 0px;
+  -moz-border-radius: 100px 0px 100px 0px;
+  -webkit-border-radius: 100px 0px 100px 0px;
+  border: 5px solid rgb(63, 26, 26);
+  width: 55vw;
+}
+
+figure figcaption {
+  text-align: center;
+  font-size: 1, 5rem;
+  color: rgb(63, 26, 26);
+}
+
+@media (min-width: 768px) {
+  #foto .fotoProducto {
+    width: 30vw;
+  }
+}
+@media (min-width: 1200px) {
+  #foto .fotoProducto {
+    width: 20vw;
+  }
+  .productos {
+    margin-bottom: 30px;
+  }
+  .fotoProducto {
+    width: 18vw;
+  }
+}
+.galeria {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.galeriaFoto {
+  width: 70vw;
+}
+
+.galeriaH3 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .galeria {
+    flex-direction: column;
+    justify-content: start;
+  }
+  .galeriaFoto {
+    width: 28vw;
+  }
+  .galeriaGrid {
+    display: grid;
+    grid-template-columns: 33vw 33vw 33vw;
+    grid-template-rows: auto;
+    grid-template-areas: "madre pascuas amigo";
+  }
+  #galeria1 {
+    grid-area: madre;
+  }
+  #galeria2 {
+    grid-area: pascuas;
+  }
+  #galeria3 {
+    grid-area: amigo;
+  }
+}
+@media (min-width: 992px) {
+  .carrusel {
+    width: 80vw;
+  }
+}
+.formulario li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 20px 60px;
+}
+.formulario li label {
+  flex: 1 0 120px;
+  max-width: 220px;
+}
+.formulario li button {
+  margin-left: auto;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 2px;
+}
+.formulario li label + * {
+  flex: 1 0 220px;
+}
+
+.h3contacto {
+  text-align: center;
+}
+
+.contactoMain {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mapa {
+  width: 70vw;
+  margin-top: 10px;
+}
+
+@media (min-width: 1200px) {
+  .contactoMain {
+    flex-direction: row-reverse;
+    margin-bottom: 40px;
+  }
+  .mapa {
+    width: 50vw;
+    height: 40vh;
+  }
+}/*# sourceMappingURL=main.css.map */
