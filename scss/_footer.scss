@@ -1,9 +1,9 @@
 footer{
-    background-color: $secundario;
+    background-color: map-get($map: $color, $key:'dos' );
     a{
         overflow: hidden;
         img{
-            width: 10vw;
+            width: 20vw;
             padding: $espacioLg $espacioMd;
         }
     }   
@@ -20,4 +20,10 @@ footer{
     transform: scale(1.1);
     cursor: pointer;
     transition: 0,5s;
+}
+
+@media (min-width: 768px){
+    .face{
+        width: 13vw;
+    }
 }

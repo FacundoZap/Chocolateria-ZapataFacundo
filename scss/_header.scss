@@ -8,7 +8,7 @@
 }
 
 header{
-    background-color: $cuarto;
+    background-color: map-get($map: $color, $key: 'cuatro');
     border-bottom: dashed $primario $espacioXxs;   
     nav{
         ul{
@@ -17,7 +17,7 @@ header{
             li{
                 font-size: $sizeXs;
                 border: outset $espacioXxs;
-                border-color: $primario;
+                border-color: map-get($map: $color, $key: 'uno');
                 list-style: none;
             }   
         }

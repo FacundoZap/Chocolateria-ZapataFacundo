@@ -1,0 +1,19 @@
+//mixins
+
+@mixin flex($dire, $justify, $align){
+    display: flex;
+    flex-direction: $dire;
+    justify-content: $justify;
+    align-items: $align;    
+}
+
+//maps
+
+$color:(
+    'uno': rgba(114, 44, 57, 1),
+    'dos': rgba(165, 81, 96, 1),
+    'tres': rgba(242, 162, 176, 1),
+    'cuatro': rgba(191, 171, 170, 1),
+    'cinco': rgba(63, 26, 26, 1),
+    );
+    

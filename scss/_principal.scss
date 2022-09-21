@@ -20,9 +20,7 @@ h1{
     padding: 50px 0;
 }
 .principal{
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    @include flex (column, center, center);
 }
 
 /* Media a 768 */

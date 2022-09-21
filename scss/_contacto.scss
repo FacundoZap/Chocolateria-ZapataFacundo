@@ -21,9 +21,7 @@
     text-align: center;
 }
 .contactoMain{
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flex (column, center, center);
 }
 .mapa{ 
     width: 70vw;
