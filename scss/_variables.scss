@@ -6,9 +6,9 @@ $cuarto: rgba(191, 171, 170, 1);
 $text-color: rgba(63, 26, 26, 1);
 
 //Font Family
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Roboto:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Roboto+Slab:wght@600&display=swap');
 $font-principal:'Merriweather', serif;
-$font-secundario:'Roboto', sans-serif;
+$font-secundario:'Roboto Slab', serif;
 
 //Font Size
 $sizeXs:1rem;
@@ -30,6 +30,11 @@ $espacioXxl:60px;
     overflow-x: hidden;
     font-family: 'Merriweather', serif;
     font-size: 62,5%;
+}
+
+h1{
+    font-family: 'Roboto Slab', serif;
+    font-size: 5rem;
 }
 
 .contenedor{
