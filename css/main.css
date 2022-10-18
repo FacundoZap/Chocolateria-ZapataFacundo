@@ -126,6 +126,10 @@ h1 {
   padding: 50px 0;
 }
 
+.nosotrosParrafo, .indexParrafo {
+  font-size: 2.2rem;
+}
+
 .principal {
   display: flex;
   flex-direction: column;
